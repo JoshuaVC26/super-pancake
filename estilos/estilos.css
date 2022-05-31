@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/seascape-4636549_1920.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header .Portada {
+  display: flex;
+  justify-content: space-between;
+}
+header h3 {
+  color: white;
+  font-family: "Smooch", cursive;
+  font-weight: bold;
+  padding: 0 30px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+header a:hover,
+header menu:active {
+  background-color: blueviolet;
+  border-radius: 2px;
+  color: yellow;
+  transition: 0.5s;
+  text-shadow: 2px 5px black;
+}
+header ul {
+  display: flex;
+  margin-right: 5px;
+  list-style: none;
+}
+header li {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+header .toggle {
+  color: white;
+  background-color: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+main {
+  margin-top: 10px;
+}
+main .Titulo {
+  background-color: black;
+  height: 80px;
+}
+main h1 {
+  color: yellow;
+  font-family: "Smooch", cursive;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 80px;
+  text-shadow: 5px 3px grey;
+}
+main .video {
+  margin-top: 10px;
+  position: relative;
+  height: 60vh;
+}
+main .video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.Info {
+  height: auto;
+}
+.Info h2 {
+  padding: 10px 10px;
+  text-align: center;
+  background-color: black;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 0;
+  text-shadow: 1px 2px aqua;
+}
+.Info p {
+  margin-top: 10px;
+  color: white;
+  font-family: "Smooch", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 30px;
+  text-shadow: 1px 2px grey;
+}
+
+article {
+  margin-top: 10px;
+}
+article h1 {
+  background-color: grey;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-family: "Smooch", cursive;
+  text-transform: uppercase;
+  text-shadow: 1px 2px yellow;
+}
+article .contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: auto;
+  gap: 15px;
+  margin: 20px;
+  justify-items: center;
+  align-items: center;
+}
+article .cArd {
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  margin: auto;
+  padding: 10px 30px;
+  border-radius: 2%;
+  border: 1px solid #fff;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+article .cArd:hover {
+  height: 500px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+article .cArd .encabezado img {
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid #fff;
+  object-fit: cover;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+article .cArd .encabezado {
+  position: relative;
+}
+article .cArd .encabezado:before, article .cArd .encabezado:after {
+  content: "";
+  position: absolute;
+  opacity: 0.7s;
+}
+article .cArd .encabezado:after {
+  border-radius: 50%;
+  z-index: 20;
+  background-color: rgba(255, 255, 0, 0.684);
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 25px;
+}
+article .cArd .encabezado:before {
+  width: 70px;
+  height: 70px;
+  bottom: 0;
+  left: -10px;
+  border-radius: 20px;
+  background-color: rgba(238, 0, 67, 0.64);
+  transform: rotate(120deg);
+}
+article .desplazar {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translate(-45px);
+}
+article .agrandar {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+article .cArd:hover .agrandar {
+  opacity: 1;
+  transform: scale(1);
+}
+article .cArd:hover .desplazar {
+  transform: translateY(0px);
+  opacity: 1;
+}
+article .desplazar:nth-child(1) {
+  transition-delay: 0.1s;
+}
+article .desplazar:nth-child(2) {
+  transition-delay: 0.2s;
+}
+article .tiTulo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 25px;
+  text-shadow: white 1px 1px;
+}
+article .teXto {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: grey 2px 2px;
+  padding: 5px 5px;
+  color: white;
+}
+article .card-boTon {
+  text-align: center;
+  margin-top: 2px;
+}
+article .botones {
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 8px 15px;
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #7579ff, #b224ef);
+}
+article .botones:hover {
+  cursor: pointer;
+  width: 100%;
+}
+article .botones span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+article .botones a {
+  text-decoration: none;
+  color: white;
+}
+
+.moRe {
+  text-align: center;
+}
+.moRe .tipos-titulo {
+  background-color: black;
+  padding: 10px 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: #b224ef 2px 3px;
+}
+.moRe .tipos h3 {
+  background-color: #b224ef;
+  padding: 20px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-family: "Smooch", cursive;
+  text-shadow: black 2px 2px;
+}
+.moRe .inFor {
+  display: flex;
+  justify-content: space-evenly;
+}
+.moRe .moAcu {
+  padding: 10px 10px;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 800px;
+}
+.moRe .moAcu img {
+  height: 100%;
+  width: 100%;
+}
+.moRe .infoMotoAcu {
+  width: 50%;
+  color: white;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tiTulo {
+  text-align: center;
+  color: black;
+  font-family: "Smooch", cursive;
+  text-shadow: yellow 1px 1px;
+  text-transform: uppercase;
+  padding: 0px 10px;
+}
+
+.masInfo {
+  padding: 10px 5px;
+}
+.masInfo p {
+  text-align: center;
+  color: white;
+  font-family: "Smooch", cursive;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: black 2px 2px;
+  padding: 5px 5px;
+}
+.masInfo ul {
+  color: black;
+  font-family: "Smooch", cursive;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: white 2px 2px;
+  list-style: none;
+  text-align: center;
+}
+
+main {
+  padding: 10px 10px;
+}
+main .subTi {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 60px;
+  text-shadow: rgb(71, 15, 15) 2px 2px;
+}
+main h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: grey 2px 1px;
+}
+main p {
+  text-align: center;
+  color: black;
+  font-family: "Smooch", cursive;
+  text-shadow: rgba(121, 43, 43, 0.597) 1px 1px;
+}
+main h2 {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 60px;
+  text-shadow: rgb(71, 15, 15) 2px 2px;
+  text-transform: uppercase;
+}
+main ul {
+  padding: 20px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-shadow: white 2px 1px;
+  list-style: none;
+}
+
+@media (max-width: 950px) {
+  body {
+    background-size: cover !important;
+    object-fit: cover;
+    background-repeat: no-repeat !important;
+  }
+
+  header {
+    height: 60px;
+  }
+  header h3 {
+    color: white;
+    font-family: "Smooch", cursive;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+  header a:hover,
+header a:active {
+    background-color: blueviolet;
+    border-radius: 2px;
+    color: white;
+    transition: 0.5s;
+    text-shadow: 1px 4px black;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  header li {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+  }
+  header .toggle {
+    display: block;
+  }
+  header .nav-Desp_visible {
+    left: 0;
+  }
+  header .toggle:focus_not(:focus-visible) {
+    outline: none;
+  }
+
+  .contenedor {
+    grid-template-columns: 1fr !important;
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 280px) {
+  * {
+    padding: 0;
+  }
+
+  .contenedor {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
