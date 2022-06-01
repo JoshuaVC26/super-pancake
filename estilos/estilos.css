@@ -9,6 +9,7 @@ body {
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 header {
@@ -327,7 +328,7 @@ article .botones a {
   font-family: "Smooch", cursive;
   text-shadow: yellow 1px 1px;
   text-transform: uppercase;
-  padding: 0px 10px;
+  padding: 10px 10px;
 }
 
 .masInfo {
@@ -389,6 +390,152 @@ main ul {
   font-size: 18px;
   text-shadow: white 2px 1px;
   list-style: none;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(350px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+.item1 {
+  background-image: url(../img/1a3dff1f44de3450afda4da2bc6a1818.jpg);
+}
+
+.item2 {
+  background-image: url(../img/AREFKJC7BRGSNPPMMQONTKP27A.jpg);
+}
+
+.item3 {
+  background-image: url(../img/bike-1836962_1280.jpg);
+}
+
+.item4 {
+  background-image: url(../img/jet-ski-2781104_1280.jpg);
+}
+
+.item5 {
+  background-image: url(../img/motorcycle-3147278_1280.jpg);
+}
+
+.item6 {
+  background-image: url(../img/motorcycle-6288958_1920.jpg);
+}
+
+.item7 {
+  background-image: url(../img/snowmobile-3031275_1280.jpg);
+}
+
+.item8 {
+  background-image: url(../img/thumb2-4k-honda-cb1000r-side-view-2019-bikes-tuning.jpg);
+}
+
+.titUlo {
+  color: white;
+  font-family: "Smooch", cursive;
+  background-color: black;
+  margin: 10px 0;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: yellow 1px 2px;
+}
+
+.textoGale {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 130px 0;
+  font-size: 50px;
+  text-shadow: grey 1px 1px;
+}
+
+.Formulario {
+  width: 100%;
+}
+
+form {
+  color: white;
+  margin: 150px 0;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  font-size: 30px;
+}
+form input {
+  margin: 10px;
+  padding: 5px 10px;
+}
+form label {
+  margin: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: #b224ef 1px 1px;
+}
+form .Numero {
+  width: 110px;
+}
+form .Comentario {
+  width: 400px;
+  height: 150px;
+}
+form .Enviar {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: white;
+  transition: all 1s ease;
+  position: relative;
+}
+form .Enviar:hover {
+  background: green;
+  color: white !important;
+}
+form .Cancelar {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0.5em 1.2em;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 2px solid;
+  border-color: white;
+}
+form .Cancelar:hover {
+  background-color: red;
+  transition: all 1s ease;
 }
 
 @media (max-width: 950px) {
