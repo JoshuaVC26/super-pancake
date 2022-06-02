@@ -526,67 +526,37 @@ main{
 
 // inicio formulario
 
-.Formulario {
-    width: 100%;
-}
-
 form{
-    color:white;
-    margin: 150px 0;
-    align-items: center;
-    text-align: center;
-    background-position: center;
-    font-size: 30px;
+    width:450px;
+    margin: auto;
+    background:rgba(0,0,0,0.4);
+    padding:50px 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    border-radius:7px;
 
-    input{
-        margin:10px;
-        padding: 5px 10px;
+    input, textarea{
+        width:100%;
+        margin-bottom: 20px;
+        padding:7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
     }
-    label{
-        margin: 20px;
-        font-size: 40px;
-        text-transform: uppercase;
-        text-shadow: #b224ef 1px 1px;
+    textarea{
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
     }
-    .Numero{
-        width:110px;
-    }
-    .Comentario{
-        width:400px;
-        height: 150px;
-    }
-    .Enviar{
-        color: white !important;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 0.5em 1.2em;
-        background: rgba(0, 0, 0, 0);
-        border: 2px solid;
-        border-color: white;
-        transition: all 1s ease;
-        position: relative;
-    }
-
-    .Enviar:hover{
-        background: green;
-        color: white !important;
-    }
-
-    .Cancelar{
-        font-weight:500;
-        font-size:20px;
-        padding: 0.5em 1.2em;
-        background-color: rgba(0,0,0,0);
+    #BBoton{
+        background:#31384A;
         color:white;
-        border: 2px solid;
-        border-color: white;
+        padding:20px;
     }
-    .Cancelar:hover{
-        background-color: red;
-        transition: all 1s ease;
+    #BBoton:hover{
+        cursor: pointer;
     }
 }
-
 
 
 
@@ -680,8 +650,11 @@ form{
     .contenedor{
         grid-template-columns: 1fr !important;
         gap: 5px;
+        z-index: -1;
     }
-    
+    form{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 280px){
@@ -689,11 +662,13 @@ form{
         padding:0;
     }
     .contenedor{
-        padding:0;
+        padding:1;
         margin: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
+        z-index:-1;
+        width:auto;
     }
 }
 
