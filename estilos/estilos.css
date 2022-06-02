@@ -31,6 +31,8 @@ header h3 {
   line-height: 80px;
   text-transform: uppercase;
   font-size: 1.5em;
+  animation: flash;
+  animation-duration: 2s;
 }
 header a {
   color: white;
@@ -82,6 +84,8 @@ main h1 {
   text-align: center;
   line-height: 80px;
   text-shadow: 5px 3px grey;
+  animation: flash;
+  animation-duration: 2s;
 }
 main .video {
   margin-top: 10px;
@@ -117,6 +121,8 @@ main video {
   color: white;
   padding: 20px 0;
   text-shadow: 1px 2px aqua;
+  animation: rubberBand;
+  animation-duration: 2s;
 }
 .Info p {
   margin-top: 10px;
@@ -139,6 +145,8 @@ article h1 {
   font-family: "Smooch", cursive;
   text-transform: uppercase;
   text-shadow: 1px 2px yellow;
+  animation: backInLeft;
+  animation-duration: 2s;
 }
 article .contenedor {
   display: grid;
@@ -161,6 +169,8 @@ article .cArd {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
+  animation: fadeIn;
+  animation-duration: 5s;
 }
 article .cArd:hover {
   height: 500px;
@@ -286,6 +296,8 @@ article .botones a {
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: #b224ef 2px 3px;
+  animation: fadeInDownBig;
+  animation-duration: 5s;
 }
 .moRe .tipos h3 {
   background-color: #b224ef;
@@ -296,6 +308,8 @@ article .botones a {
   color: white;
   font-family: "Smooch", cursive;
   text-shadow: black 2px 2px;
+  animation: fadeInRightBig;
+  animation-duration: 5s;
 }
 .moRe .inFor {
   display: flex;
@@ -329,6 +343,8 @@ article .botones a {
   text-shadow: yellow 1px 1px;
   text-transform: uppercase;
   padding: 10px 10px;
+  animation: flipInX;
+  animation-duration: 3s;
 }
 
 .masInfo {
@@ -343,6 +359,8 @@ article .botones a {
   text-transform: uppercase;
   text-shadow: black 2px 2px;
   padding: 5px 5px;
+  animation: rotateInDownLeft;
+  animation-duration: 3s;
 }
 .masInfo ul {
   color: black;
@@ -353,6 +371,8 @@ article .botones a {
   text-shadow: white 2px 2px;
   list-style: none;
   text-align: center;
+  animation: rotateInDownLeft;
+  animation-duration: 3s;
 }
 
 main {
@@ -369,12 +389,16 @@ main h4 {
   text-align: center;
   text-transform: uppercase;
   text-shadow: grey 2px 1px;
+  animation: rotateInDownLeft;
+  animation-duration: 3s;
 }
 main p {
   text-align: center;
   color: black;
   font-family: "Smooch", cursive;
   text-shadow: rgba(121, 43, 43, 0.597) 1px 1px;
+  animation: rotateInDownLeft;
+  animation-duration: 3s;
 }
 main h2 {
   text-align: center;
@@ -382,6 +406,8 @@ main h2 {
   font-size: 60px;
   text-shadow: rgb(71, 15, 15) 2px 2px;
   text-transform: uppercase;
+  animation: slideInRight;
+  animation-duration: 3s;
 }
 main ul {
   padding: 20px 5px;
@@ -429,34 +455,50 @@ main ul {
 }
 .item1 {
   background-image: url(../img/1a3dff1f44de3450afda4da2bc6a1818.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .item2 {
   background-image: url(../img/AREFKJC7BRGSNPPMMQONTKP27A.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .item3 {
   background-image: url(../img/bike-1836962_1280.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .item4 {
   background-image: url(../img/jet-ski-2781104_1280.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .item5 {
   background-image: url(../img/motorcycle-3147278_1280.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .item6 {
   background-image: url(../img/motorcycle-6288958_1920.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .item7 {
   background-image: url(../img/snowmobile-3031275_1280.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .item8 {
   background-image: url(../img/thumb2-4k-honda-cb1000r-side-view-2019-bikes-tuning.jpg);
+  animation: rollIn;
+  animation-duration: 3s;
 }
 
 .titUlo {
@@ -469,6 +511,8 @@ main ul {
   font-size: 50px;
   text-transform: uppercase;
   text-shadow: yellow 1px 2px;
+  animation: flash;
+  animation-duration: 3s;
 }
 
 .textoGale {

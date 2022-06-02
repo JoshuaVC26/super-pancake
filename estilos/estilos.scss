@@ -61,6 +61,8 @@ header{
         line-height: 80px;
         text-transform: uppercase;
         font-size: 1.5em;
+        animation: flash;
+        animation-duration: 2s;
     }
 
     a{
@@ -120,6 +122,8 @@ main{
         text-align:center;
         line-height: 80px;
         text-shadow: 5px 3px grey;
+        animation: flash;
+        animation-duration: 2s;
     }
 
     .video{
@@ -160,6 +164,8 @@ main{
         color:white;
         padding:20px 0;
         text-shadow: 1px 2px aqua;
+        animation: rubberBand;
+        animation-duration: 2s;
     }
 
     p{
@@ -181,6 +187,8 @@ article{
         @include c-fm($color2,$font);
         text-transform:uppercase;
         text-shadow: 1px 2px yellow;
+        animation: backInLeft;
+        animation-duration: 2s;
     }
     .contenedor{
         display: grid;
@@ -203,6 +211,8 @@ article{
         box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
         text-align: center;
         background: linear-gradient(-135deg,#c850c0, #4158d0);
+        animation: fadeIn;
+        animation-duration: 5s;
     }
 
     .cArd:hover{
@@ -332,6 +342,8 @@ article{
         text-transform: uppercase;
         font-weight: bold;
         text-shadow: #b224ef 2px 3px;
+        animation: fadeInDownBig;
+        animation-duration: 5s;
     }
     .tipos h3{
         background-color: #b224ef;
@@ -341,6 +353,8 @@ article{
         font-size: 35px;
         @include c-fm($color2,$font);
         text-shadow: black 2px 2px;
+        animation: fadeInRightBig;
+        animation-duration: 5s;
     }
     .inFor{
         display: flex;
@@ -376,6 +390,8 @@ article{
     text-shadow: yellow 1px 1px;
     text-transform: uppercase;
     padding:10px 10px;
+    animation: flipInX;
+    animation-duration: 3s;
 }
 .masInfo{
     padding: 10px 5px;
@@ -388,6 +404,8 @@ article{
         text-transform: uppercase;
         text-shadow: black 2px 2px;
         padding:5px 5px;
+        animation: rotateInDownLeft;
+        animation-duration: 3s;
     }
     ul{
         @include c-fm($color1,$font);
@@ -397,6 +415,8 @@ article{
         text-shadow: white 2px 2px;
         list-style: none;
         text-align: center;
+        animation: rotateInDownLeft;
+        animation-duration: 3s;
     }
 
 }
@@ -415,11 +435,15 @@ main{
         text-align: center;
         text-transform: uppercase;
         text-shadow:grey 2px 1px;
+        animation: rotateInDownLeft;
+        animation-duration: 3s;
     }
     p{
         text-align: center;
         @include c-fm($color1,$font);
         text-shadow: rgba(121, 43, 43, 0.597) 1px 1px;
+        animation: rotateInDownLeft;
+        animation-duration: 3s;
     }
     h2{
         text-align:center;
@@ -427,6 +451,8 @@ main{
         font-size: 60px;
         text-shadow: rgb(71, 15, 15) 2px 2px;
         text-transform: uppercase;
+        animation: slideInRight;
+        animation-duration: 3s;
     }
 
     ul{
@@ -481,27 +507,43 @@ main{
 // items
 .item1{
     background-image: url(../img/1a3dff1f44de3450afda4da2bc6a1818.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .item2{
     background-image: url(../img/AREFKJC7BRGSNPPMMQONTKP27A.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .item3{
     background-image: url(../img/bike-1836962_1280.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .item4{
     background-image: url(../img/jet-ski-2781104_1280.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .item5{
     background-image: url(../img/motorcycle-3147278_1280.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .item6{
     background-image: url(../img/motorcycle-6288958_1920.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .item7{
     background-image: url(../img/snowmobile-3031275_1280.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .item8{
     background-image: url(../img/thumb2-4k-honda-cb1000r-side-view-2019-bikes-tuning.jpg);
+    animation: rollIn;
+    animation-duration: 3s;
 }
 .titUlo{
     @include c-fm($color2,$font);
@@ -512,6 +554,8 @@ main{
     font-size: 50px;
     text-transform: uppercase;
     text-shadow: yellow 1px 2px;
+    animation: flash;
+    animation-duration: 3s;
 }
 .textoGale{
     color:white;
